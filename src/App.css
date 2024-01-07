@@ -1,3 +1,14 @@
+@import url('https://fonts.googleapis.com/css2?family=Lobster&family=Roboto+Condensed:wght@300;500&display=swap');
+
+:root {
+  --blanc : #fff;
+}
+
+body {
+  font-family: "Roboto Condensed" sans-serif;
+}
+
+
 .App {
   text-align: center;
 }
@@ -36,3 +47,93 @@
     transform: rotate(360deg);
   }
 }
+
+
+/* ***************NAVBAR */
+.logo {
+  width: 4rem;
+}
+
+nav .nav-link a {
+
+  font-weight: 500;
+  letter-spacing: 0.04 rem;
+  cursor: pointer;
+  
+}
+
+nav ul li {
+  text-transform: uppercase;
+}
+
+.navbar-nav > li > a {
+color: var(--blanc); }
+
+
+/* HEADER */
+
+.header_wrap {
+  /* display: none; */
+position: relative;
+background: url(bryan-goff-RF4p4rTM-2s-unsplash.jpg) no-repeat;
+background-size: cover;
+background-position: center;
+height: 90vh;
+
+}
+
+.main_info {
+  display: flex;
+  position: absolute;
+  top: 5vh;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+  font-family: "Roboto Condensed" sans-serif;
+  color: var(--blanc);
+
+}
+
+.main_info h1 {
+  color: var(--blanc);
+  text-transform: uppercase;
+
+}
+
+/* TYPED TEXT */
+.typed-text {
+  color: rgb(28, 43, 126); 
+}
+
+/* Bouton contact du header*/
+.btn-contact {
+border: red 1px solid;
+text-transform: uppercase;
+border-radius: 0;
+padding: 0.65rem 0.75rem 0.75rem 0.75rem;
+color: var(--blanc);
+text-decoration: none;
+margin: 4rem;
+}
+
+.btn-contact:hover {
+  text-decoration: none;
+  background-color: rgba(255, 0, 0, 0.3);
+color: var(--blanc);
+transition: 500ms ease-out;
+}
+
+/* Particules */
+
+#tsparticles {
+  z-index: 1;
+}
+
+@media(max-width : 768px)  {
+  #tsparticles {
+display: none;
+}}
